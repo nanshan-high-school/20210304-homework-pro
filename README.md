@@ -9,3 +9,20 @@ Pull Request 前請確認以下事項：
 * 檔案放在自己學號的目錄下
 * 標題以「班級座號、學號、姓名」作為開頭
 * 其他說明事項可以在下面補充
+---
+## 本週作業
+
+* 最長共同子字串：
+  * INPUT：第一行輸入兩個數 N, M（0 < N, M <= 100）分別代表兩字串的字母數<p>第二第三行輸入兩字串的內容
+  * OUTPUT：輸出最長共同子字串的字母數
+---
+## Sample:
+* sample 1:
+  7 7<p>
+  abcdefg<p>
+  chdbcdd<p>
+  **ans : 3**
+* sample 2:
+  jbdklfaskgj<p>
+  ouehfwjkdsfjn<p>
+  **ans : 4**
