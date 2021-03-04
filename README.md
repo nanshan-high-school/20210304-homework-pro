@@ -17,12 +17,12 @@ Pull Request 前請確認以下事項：
   * OUTPUT：輸出最長共同子字串的字母數
 ---
 ## Sample:
-* sample 1:
+* sample 1:<p>
   7 7<p>
   abcdefg<p>
   chdbcdd<p>
   **ans : 3**
-* sample 2:
+* sample 2:<p>
   jbdklfaskgj<p>
   ouehfwjkdsfjn<p>
   **ans : 4**
