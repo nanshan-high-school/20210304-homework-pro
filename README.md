@@ -26,3 +26,8 @@ Pull Request 前請確認以下事項：
   jbdklfaskgj<p>
   ouehfwjkdsfjn<p>
   **ans : 4**
+* sample 3:<p>
+  asdfghjklwquroetrqirw<p>
+  asdeyuqwtrfgqweuiyuchjxz,bwkqeilcxvbnwqu<p>
+  **ans : 12**
+   
