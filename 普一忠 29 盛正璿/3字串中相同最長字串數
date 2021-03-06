@@ -1,0 +1,25 @@
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+int main() {
+    string strA,strB,strC;
+    cin >> strA;
+    cin >> strB;
+    cin >> strC;
+    int map[strA.length()+1][strB.length()+1][strC.length()+1];
+    memset(map,0,sizeof(map));
+    for(int i=1; i<strA.length()+1; i++){
+        for(int j=1; j<strB.length()+1; j++){
+            for(int k=1; k<strC.length()+1; k++){
+                if(strA[i-1]==strB[j-1] && strA[i-1]==strC[k-1]){
+                    map[i][j][k]=map[i-1][j-1][k-1]+1;
+                }else{
+                    map[i][j][k]=max(max(map[i-1][j][k],map[i][j-1][k]),map[i][j][k-1]);
+                }
+            }
+        }
+    }
+
+    cout << map[strA.length()][strB.length()][strC.length()];
+}
