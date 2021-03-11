@@ -1,0 +1,33 @@
+#include <iostream>
+#include <algorithm> 
+using namespace std;
+
+int main() {
+    int n1, n2, n3;
+    cin >> n1 >> n2 >> n3;
+    string str1, str2, str3;
+    cin >> str1;
+    cin >> str2;
+    cin >> str3;
+    int ouo[n1 + 1][n2 + 1][n3 + 1];
+    for (int i = 0; i < n1 + 1; i++) {
+		for (int j = 0; j < n2 + 1; j++) {
+			for (int k = 0; k < n3 + 1; k++) {
+				ouo[i][j][k] = 0;
+			}
+		}
+	}
+    for (int i = 1; i < n1 + 1; i++) {
+		for (int j = 1; j < n2 + 1; j++) {
+			for (int k = 1; k < n3 + 1; k++) {
+				if (str1[i - 1] == str2[j - 1] && str2[j - 1] == str3[k - 1]) {
+					ouo[i][j][k] = ouo[i - 1][j - 1][k - 1] + 1;
+				} else {
+					ouo[i][j][k] = max(ouo[i - 1][j][k], ouo[i][j - 1][k]);
+					ouo[i][j][k] = max(ouo[i][j][k - 1], ouo[i][j][k]);
+				}
+			}
+		}
+	}
+	cout << ouo[n1][n2][n3];
+}
